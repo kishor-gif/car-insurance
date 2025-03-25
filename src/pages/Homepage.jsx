@@ -12,10 +12,11 @@ const Homepage = () => {
         <div className="text-2xl font-bold text-blue-400">DriveSafe</div>
         <div className="hidden md:flex space-x-6">
           <Link to="/login" className="hover:text-blue-400">Sign Up</Link>
-          <Link to="/" className="hover:text-blue-400">Home</Link>
+          <Link to="/home" className="hover:text-blue-400">Home</Link>
           <Link to="/about" className="hover:text-blue-400">About Us</Link>
-          <Link to="/plans" className="hover:text-blue-400">Plans</Link>
+          
           <Link to="/contact" className="hover:text-blue-400">Contact Us</Link>
+          <Link className="hover:text-yellow-300 transition" to="/rewards">Rewards</Link>
         </div>
         {/* Mobile Menu Button */}
         <div className="md:hidden">
@@ -27,10 +28,11 @@ const Homepage = () => {
       {menuOpen && (
         <div className="md:hidden flex flex-col bg-black bg-opacity-90 p-6 text-center space-y-4">
           <Link to="/login" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>Sign Up</Link>
-          <Link to="/" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/home" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/about" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>About Us</Link>
-          <Link to="/plans" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>Plans</Link>
+          <Link to="/rewards" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>Rewards</Link>
           <Link to="/contact" className="hover:text-blue-400" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+
         </div>
       )}
 
