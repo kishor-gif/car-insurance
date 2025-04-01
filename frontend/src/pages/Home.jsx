@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const boxes = [
-    { title: "Risk Prediction", route: "/risk" },
+    { title: "Risk Prediction", route: "/predict" },
     { title: "Rewards", route: "/rewards" },
     { title: "Know Your Vehicle", route: "/vehicle" },
     { title: "Driving Behavior Insights", route: "/insights" },
