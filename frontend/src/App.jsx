@@ -7,6 +7,7 @@ import AboutUs from './pages/AboutUs.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import Rewards from './pages/Rewards.jsx';
 import Home from './pages/Home.jsx';
+import ChatBot from "./pages/ChatBot";
 import PredictBehavior from "./pages/PredictBehavior";
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
       <Route path="/rewards" element={<Rewards />} />
       <Route path="/home" element={<Home />} />
       <Route path="/predict" element={<PredictBehavior />} />
+      <Route path="/chat" element={<ChatBot />} />
+
     </Routes>
   );
 };
