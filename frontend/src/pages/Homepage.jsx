@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import background from "../assets/background.jpg";
 
 const Homepage = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: "url('src/assets/background.jpg')" }}>
+    <div className="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat text-white" style={{ backgroundImage: `url(${background})` }}>
       {/* Navbar */}
       <nav className="flex justify-between items-center bg-black bg-opacity-60 px-6 py-4 md:px-12">
         <div className="text-2xl font-bold text-blue-400">DriveSafe</div>

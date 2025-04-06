@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import background from "../assets/background 1.jpg";
+
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ export default function LoginPage() {
     <div 
       className="h-screen w-screen flex items-center justify-center bg-black relative overflow-hidden px-4"
       style={{ 
-        backgroundImage: "url('/src/assets/background 1.jpg')", 
+        backgroundImage: `url(${background})`, 
         backgroundSize: "cover", 
         backgroundPosition: "center" 
       }}
